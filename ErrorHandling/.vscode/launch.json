@@ -12,6 +12,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/catch_errors.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "writing_error_handlers",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/writing_error_handlers.js"
         }
     ]
 }
