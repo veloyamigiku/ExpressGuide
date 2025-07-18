@@ -1,0 +1,45 @@
+### ユーザ情報の登録
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "john@example.com" 
+}
+
+### ユーザ情報の取得
+GET http://localhost:3000/users
+
+### ユーザ情報の個別取得
+GET http://localhost:3000/users/1
+
+### ユーザ情報の更新
+PUT http://localhost:3000/users/20
+Content-Type: application/json
+
+{
+    "name": "Kevin"
+}
+
+### ユーザ情報の削除
+DELETE http://localhost:3000/users/2
+
+### Postデータの作成1
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "Prismaの基本",
+    "content": "リレーションショッピンの設定を確認中",
+    "authorId": 1
+}
+
+### Postデータの作成2
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "Prismaの基本2",
+    "content": "Postテーブルへの新規データ作成を確認",
+    "authorId": 10
+}
